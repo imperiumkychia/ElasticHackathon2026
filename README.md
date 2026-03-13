@@ -53,6 +53,22 @@ This project is a multi-service healthcare assistant prototype built for hackath
 
 Together, these services demonstrate how conversational triage, structured medical operations data, and tool-augmented AI can run as one end-to-end system.
 
+## Integration Summary
+
+This project also integrates **Elastic**, an **MCP server**, **Twilio**, and **ElevenLabs** for a phone-call use case.
+
+- Twilio handles the call channel.
+- ElevenLabs provides voice interaction.
+- Elastic provides indexed knowledge retrieval.
+- The MCP server provides tool access to clinic data and workflows.
+
+Through this architecture, the agent can complete end-to-end actions during a call, including:
+- retrieving database data
+- querying Elastic indexes
+- managing appointments (view/update flow)
+
+All of these are orchestrated by the agent in one conversation flow.
+
 ## Repository Structure
 
 - `Frontend/` - React + Vite chat UI (`elastic-agent-frontend`)
