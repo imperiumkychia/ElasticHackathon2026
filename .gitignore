@@ -1,0 +1,12 @@
+# Environment files (secrets)
+**/.env
+
+# Keep example env templates in git
+!**/.env.example
+
+# Dependencies
+**/node_modules/
+
+**.DS_Store
+
+**/package-lock.json
